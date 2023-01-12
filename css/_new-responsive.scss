@@ -22,17 +22,56 @@
     .service_page footer {
         padding-top: 200px;
     }
+
+    .service_landing .content,
+    .main_content {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+
+        .btn {
+            margin: 0 auto;
+        }
+
+        p.description {
+            text-align: left;
+        }
+    }
 }
 
 @media screen and (max-width:750px) {
     .service_page footer {
         padding-top: 250px;
     }
+
+    .faq_service {
+        padding: 140px 0 250px;
+    }
 }
 
 @media screen and (max-width:500px) {
     .service_page footer {
         padding-top: 350px;
+    }
+
+    .faq_service {
+        padding: 140px 0 350px;
+    }
+
+    .our_success .item {
+        margin: 0;
+        padding: 30px 20px;
+    }
+
+    .our_success .owl-nav {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+
+        button {
+            position: static;
+            transform: none;
+
+        }
     }
 }
 

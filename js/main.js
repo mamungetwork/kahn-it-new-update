@@ -193,7 +193,7 @@ if (slickSlider !== null) {
     items: 7,
     loop: true,
     margin: 40,
-    // autoplay: true,
+    autoplay: true,
     autoplayTimeout: 2000,
     autoplayHoverPause: false,
     autoWidth: true,
@@ -219,7 +219,7 @@ if (slickSlider !== null) {
 }
 
 $(".demo").expander({
-  slicePoint: 400,
+  slicePoint: 680,
 });
 
 // FAQ Accordion **************
