@@ -3213,7 +3213,9 @@ header.active nav .nav_menu_active {
     margin: 0 auto;
   }
   .service_landing .content p.description,
-.main_content p.description {
+.service_landing .content .accordion-content .title,
+.main_content p.description,
+.main_content .accordion-content .title {
     text-align: left;
   }
 }

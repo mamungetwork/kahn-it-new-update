@@ -32,7 +32,8 @@
             margin: 0 auto;
         }
 
-        p.description {
+        p.description,
+        .accordion-content .title {
             text-align: left;
         }
     }
