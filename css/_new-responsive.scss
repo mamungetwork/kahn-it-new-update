@@ -1,0 +1,39 @@
+@media screen and (max-width:1300px) {}
+
+@media screen and (max-width:1150px) {
+    .working_process .new_content {
+        gap: 20px;
+    }
+
+    .working_process .new_content .image img {
+        width: 162%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .working_process .new_content {
+        display: flex;
+    }
+
+    .working_process .new_content .image {
+        display: none;
+    }
+
+    .service_page footer {
+        padding-top: 200px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .service_page footer {
+        padding-top: 250px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .service_page footer {
+        padding-top: 350px;
+    }
+}
+
+@media screen and (max-width:350px) {}
