@@ -2393,7 +2393,6 @@ span.details {
 }
 .business_seo .main_content .image img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 .business_seo .accordion-content {
@@ -2405,6 +2404,9 @@ span.details {
 }
 .business_seo .accordion-content p {
   color: #fff;
+}
+.business_seo .accordion-content .description {
+  max-height: 160px;
 }
 .business_seo .accordion-content.open {
   padding-bottom: 10px;

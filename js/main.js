@@ -255,6 +255,9 @@ if (businessSEO !== null) {
       if (item.classList.contains("open")) {
         description.style.height = `${description.scrollHeight}px`;
         item.querySelector("i").classList.replace("fa-plus", "fa-minus");
+        if (description.scrollHeight > 260) {
+          description.style.overflowY = "scroll";
+        }
       } else {
         description.style.height = "0px";
         item.querySelector("i").classList.replace("fa-minus", "fa-plus");
