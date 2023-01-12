@@ -7,6 +7,39 @@ span.details {
     line-height: 150%;
 }
 
+.service_landing {
+    width: 100%;
+    padding: 60px 0 140px;
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 50px;
+
+        .left_info {
+            p {
+                margin: 20px 0 30px;
+            }
+
+            .btn {
+                max-width: 240px;
+            }
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
 .working_process {
     overflow: hidden;
     background: #F3F3F4;
@@ -36,13 +69,50 @@ span.details {
 }
 
 .service_happy_client {
+    overflow: hidden;
+    padding-bottom: 140px;
+
+    .top {
+        margin-bottom: 40px;
+    }
+
     .owl-stage {
         display: flex;
         align-items: center;
     }
 
     .owl-stage-outer {
-        padding: 50px 0;
+        overflow: visible;
+    }
+
+    .owl-nav {
+        margin-top: 40px;
+
+        button {
+            width: 36px;
+            height: 36px;
+            background-color: $primaryColor !important;
+            border-radius: 8px !important;
+            transition: .3s;
+            border: 1px solid $primaryColor !important;
+
+            span {
+                font-size: 34px;
+                line-height: 32px;
+                color: #fff !important;
+                transition: .3s;
+            }
+
+            &:hover {
+                border: 1px solid $primaryColor;
+                background: transparent !important;
+                color: $primaryColor;
+
+                span {
+                    color: $primaryColor !important;
+                }
+            }
+        }
     }
 
     .slide_logo {
@@ -77,6 +147,10 @@ span.details {
     }
 }
 
+.faq_service {
+    padding-bottom: 215px;
+}
+
 .service_page {
     footer {
         padding-top: 180px;
@@ -84,6 +158,30 @@ span.details {
 }
 
 .business_seo {
+    padding: 140px 0;
+    margin: 0 0 140px;
+    background-color: #f2f8ff;
+
+    .top {
+        margin-bottom: 60px;
+    }
+
+    .main_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+
+        .image {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 
     .accordion-content {
         background-color: $primaryColor;
@@ -133,6 +231,128 @@ span.details {
     }
 }
 
+.custmer_feedback {
+    .top {
+        margin-bottom: 60px;
+    }
+
+    .main_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+
+        .btn {
+            margin-top: 30px;
+            max-width: 240px;
+        }
+
+        .right_video {
+            width: 100%;
+            height: 100%;
+            background: #f2f8ff;
+
+
+            video {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
 .our_success {
     width: 100%;
+    padding: 140px 0;
+    margin: 140px 0;
+    background-color: #f2f8ff;
+
+    .top {
+        margin-bottom: 60px;
+    }
+
+    .owl-two {
+        position: relative;
+    }
+
+    .item {
+        background: #237ddd;
+        padding: 40px;
+        text-align: center;
+        margin: 0 50px;
+
+        h3 {
+            margin-bottom: 15px;
+            letter-spacing: unset;
+            font-weight: bold;
+        }
+
+        p,
+        h3 {
+            color: #fff;
+        }
+    }
+
+    .owl-nav {
+        margin-top: 40px;
+
+        button {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            background-color: $primaryColor !important;
+            border-radius: 8px !important;
+            transition: .3s;
+            border: 1px solid $primaryColor !important;
+
+            span {
+                font-size: 34px;
+                line-height: 32px;
+                color: #fff !important;
+                transition: .3s;
+                text-align: center;
+            }
+
+            &:hover {
+                border: 1px solid $primaryColor;
+                background: transparent !important;
+                color: $primaryColor;
+
+                span {
+                    color: $primaryColor !important;
+                }
+            }
+        }
+
+        button.owl-prev {
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0 !important;
+        }
+
+        button.owl-next {
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0 !important;
+        }
+    }
+}
+
+.best_seo_bd {
+    padding-bottom: 140px;
+
+
+    a.more-link,
+    a.less-link {
+        display: block;
+        color: #080829;
+        font-weight: 600;
+        padding-top: 15px;
+    }
+}
+
+.service_free_audit {
+    margin-bottom: 0;
 }
