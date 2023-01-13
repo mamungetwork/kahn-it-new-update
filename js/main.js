@@ -217,10 +217,13 @@ if (slickSlider !== null) {
     dots: false,
   });
 }
+const readMore = document.querySelector(".demo");
 
-$(".demo").expander({
-  slicePoint: 680,
-});
+if (readMore !== null) {
+  $(".demo").expander({
+    slicePoint: 680,
+  });
+}
 
 // FAQ Accordion **************
 if (faq !== null) {
