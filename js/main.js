@@ -217,10 +217,13 @@ if (slickSlider !== null) {
     dots: false,
   });
 }
+const readMore = document.querySelector(".demo");
 
-$(".demo").expander({
-  slicePoint: 680,
-});
+if (readMore !== null) {
+  $(".demo").expander({
+    slicePoint: 680,
+  });
+}
 
 // FAQ Accordion **************
 if (faq !== null) {
@@ -255,6 +258,9 @@ if (businessSEO !== null) {
       if (item.classList.contains("open")) {
         description.style.height = `${description.scrollHeight}px`;
         item.querySelector("i").classList.replace("fa-plus", "fa-minus");
+        if (description.scrollHeight > 260) {
+          description.style.overflowY = "scroll";
+        }
       } else {
         description.style.height = "0px";
         item.querySelector("i").classList.replace("fa-minus", "fa-plus");

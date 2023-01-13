@@ -2393,7 +2393,6 @@ span.details {
 }
 .business_seo .main_content .image img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 .business_seo .accordion-content {
@@ -2405,6 +2404,9 @@ span.details {
 }
 .business_seo .accordion-content p {
   color: #fff;
+}
+.business_seo .accordion-content .description {
+  max-height: 160px;
 }
 .business_seo .accordion-content.open {
   padding-bottom: 10px;
@@ -2436,27 +2438,8 @@ span.details {
   cursor: pointer;
 }
 
-.custmer_feedback .top {
-  margin-bottom: 60px;
-}
-.custmer_feedback .main_content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  align-items: center;
-}
-.custmer_feedback .main_content .btn {
-  margin-top: 30px;
-  max-width: 240px;
-}
-.custmer_feedback .main_content .right_video {
-  width: 100%;
-  height: 100%;
-  background: #f2f8ff;
-}
-.custmer_feedback .main_content .right_video video {
-  width: 100%;
-  height: 100%;
+.client_review_service {
+  padding: 0;
 }
 
 .our_success {
@@ -3213,7 +3196,9 @@ header.active nav .nav_menu_active {
     margin: 0 auto;
   }
   .service_landing .content p.description,
-.main_content p.description {
+.service_landing .content .accordion-content .title,
+.main_content p.description,
+.main_content .accordion-content .title {
     text-align: left;
   }
 }
